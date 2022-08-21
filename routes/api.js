@@ -8,7 +8,7 @@ router.post("/api/transaction", ({body}, res) => {
     })
     .catch(err => {
       res.status(404).json(err);
-      //saveRecord(body)
+      saveRecord(body)
     });
 });
 
@@ -19,7 +19,7 @@ router.post("/api/transaction/bulk", ({body}, res) => {
     })
     .catch(err => {
       res.status(404).json(err);
-      //saveRecord(body)
+      saveRecord(body)
     });
 });
 
